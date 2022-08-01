@@ -7,7 +7,7 @@
 //  Write a function that takes an array and returns the maximum value in the provided array.
 //  Without using build-in methods.
 //
-   var arr = [12,32,22,45,78,12,50];
+   
 //  Output: 78
 
 const findMax = (arr) => {
@@ -21,10 +21,10 @@ arr[3]=45;
 arr[4] = 78;
 arr[5] = 12;
 arr[6] =50;*/
-
+//var arr = [12,32,22,45,78,12,50];
 var max=arr[0];
 
-    for(var i=1;i<=6;i++) {
+    for(var i=0;i<arr.length;i++) {
         if(arr[i]>max) {
             max=arr[i];}
         }return max;
@@ -40,15 +40,19 @@ var max=arr[0];
 //
 //  Input: [20, '234', 'car', 41, 20, 'chair']
 //  Output: 81
-var arr = [20,'243','car',41,20,'chear'];
-var sum =0
+
 const sumNums = (arr) => {
-  //let sum;
-  // write your code herefor(var x=0;x<=5;x++){
-        if(typeof A[x]!=='string') {
-          sum=sum+A[x]
-          
-      }
+ // var arr = [20,'243','car',41,20,'chear'];
+
+ //var arr = [];
+  var sum =0;
+    //let sum;
+    // write your code herefor(var x=0;x<=5;x++){
+    for(var x = 0; x < arr.length; x++) {
+          if(typeof arr[x]=="number") {
+            sum=sum+arr[x];
+            
+        }}
   return sum;
 };
 // -------------------------------------------------------------------------------------------------------
